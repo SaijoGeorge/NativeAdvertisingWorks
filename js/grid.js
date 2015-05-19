@@ -346,7 +346,7 @@ var Grid = (function() {
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
 			
-			this.$author = $( '<p>Submitted By </p>' );
+			this.$author = $( '<p>Submitted by </p>' );
 			this.$authorhref = $( '<a target="_blank" href="#" id="author-style"></a>' );
 			this.$author.append(this.$authorhref);
 			var detailAppends = [this.$title, this.$description, this.$author];
