@@ -1,3 +1,16 @@
+#author-style{
+	font-weight: 700;
+	font-size: 16px;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 0px;
+	border: none;
+	margin: 0px;
+	outline: none;
+	display: inline-block;
+}
+
 .og-grid {
 	list-style: none;
 	padding: 20px 0;

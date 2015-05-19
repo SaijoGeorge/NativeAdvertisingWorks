@@ -345,7 +345,11 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			var detailAppends = [this.$title, this.$description];
+			
+			this.$author = $( '<p>Submitted By </p>' );
+			this.$authorhref = $( '<a target="_blank" href="#" id="author-style"></a>' );
+			this.$author.append(this.$authorhref);
+			var detailAppends = [this.$title, this.$description, this.$author];
 			if (settings.showVisitButton === true) {
 				this.$href = $( '<a target="_blank" href="#">Site</a>' );
 				this.$href2 = $( '<a target="_blank" href="#">PDF</a>' );
@@ -389,14 +393,19 @@ var Grid = (function() {
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
 					description : $itemEl.data( 'description' ),
-					href2 : $itemEl.data('href2')
+					href2 : $itemEl.data('href2'),
+					author : $itemEl.data('author'),
+					authorhref : $itemEl.data('authorhref')
 				};
 
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
+			//this.$author.html( eldata.author );
+			this.$authorhref.html( eldata.author );
 			if (settings.showVisitButton === true) {
 				this.$href.attr( 'href', eldata.href );
 				this.$href2.attr( 'href', eldata.href2 );
+				this.$authorhref.attr( 'href', eldata.authorhref);
 			}
 
 			var self = this;
