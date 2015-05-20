@@ -3,7 +3,7 @@
 	font-size: 16px;
 	color: #333;
 	text-transform: none;
-	letter-spacing: 2px;
+	letter-spacing: 0px;
 	padding: 10px;
 	border: none;
 	margin: 0px;
@@ -194,7 +194,7 @@
 
 @media screen and (max-width: 830px) {
 
-	.og-expander h3 { font-size: 32px; }
+	.og-expander h3 { font-size: 25px; }
 	.og-expander p { font-size: 13px; }
 	.og-expander a { font-size: 12px; }
 
