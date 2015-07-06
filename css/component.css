@@ -28,7 +28,7 @@
 
 .og-grid li > a,
 .og-grid li > a img {
-	border: none;
+	border:1px solid #f9845b;
 	outline: none;
 	display: block;
 	position: relative;
